@@ -1,0 +1,17 @@
+<?
+require('../lib.php');
+$username = getParam('username');
+if ($username == 'pdemetis') {
+	for ($i=0;$i<20;$i++) {
+		echo $i + 1 . ' ' . $username . '<br/>';
+	}
+}
+?>
+<script>
+var username = "<?= $username; ?>";
+if (username == 'johnecon') {
+	for (i=0;i<10;i++) {
+		alert(username);
+	}
+}
+</script>
